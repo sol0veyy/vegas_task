@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Manrope";
+  font-weight: 400;
+  src: url("../assets/fonts/Manrope-Regular.ttf");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 500;
+  src: url("../assets/fonts/Manrope-Medium.ttf");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: bold;
+  src: url("../assets/fonts/Manrope-Bold.ttf");
+}
+* {
+  font-family: "Manrope", system-ui;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: gray;
+}
+
+.card-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  width: 900px;
+  border-radius: 25px;
+  padding: 32px;
+  background-color: #fff;
+}
+.card-product__left-section, .card-product__right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.card-product__right-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 32px;
+}
+.card-product__right-section > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+.card-product__right-section > div:last-child > span {
+  font-size: 32px;
+  font-weight: bold;
+}
+.card-product__right-section > div:last-child > button {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 100px;
+  border: 0px;
+  background-color: rgb(222, 52, 29);
+  padding: 20px 24px;
+}
+.card-product__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.card-product__title > span:nth-child(1) {
+  font-size: 24px;
+  font-weight: bold;
+}
+.card-product__title > span:nth-child(2) {
+  font-size: 18px;
+  color: rgb(120, 120, 120);
+}
+.card-product__image {
+  width: 350px;
+  height: 300px;
+  border-radius: 25px;
+}
+.card-product__nutrient {
+  margin-top: 32px;
+}
+
+.nutrient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  padding: 0 8px;
+  font-size: 18px;
+}
+.nutrient__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: rgb(120, 120, 120);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(230, 230, 230);
+}
+
+.ingridient__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.ingridient__title > span:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ingridient__title > span:nth-child(2) {
+  color: rgb(120, 120, 120);
+}
+.ingridient__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+.ingridient__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5px;
+  padding: 8px 12px;
+  background-color: rgb(246, 247, 248);
+}
+.ingridient__item > span {
+  font-size: 18px;
+}
+.ingridient__item > span > span {
+  color: rgb(120, 120, 120);
+}
+.ingridient__item__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+.ingridient__item__counter > img {
+  cursor: pointer;
+}
+.ingridient__item__counter > span {
+  font-size: 18px;
+  font-weight: 500;
+}

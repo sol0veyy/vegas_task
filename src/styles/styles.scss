@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 400;
+    src: url('../assets/fonts/Manrope-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 500;
+    src: url('../assets/fonts/Manrope-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: bold;
+    src: url('../assets/fonts/Manrope-Bold.ttf');
+}
+
+* {
+    font-family: 'Manrope', system-ui;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+}
+
+.card-product {
+    display: flex;
+    gap: 32px;
+    width: 900px;
+    border-radius: 25px;
+    padding: 32px;
+    background-color: #fff;
+
+    &__left-section,
+    &__right-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right-section {
+        flex: 1;
+        gap: 32px;
+
+        & > div:last-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+
+            & > span {
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            & > button {
+                cursor: pointer;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                border-radius: 100px;
+                border: 0px;
+                background-color: rgba(222, 52, 29, 1);
+                padding: 20px 24px;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        & > span:nth-child(1) {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        & > span:nth-child(2) {
+            font-size: 18px;
+            color: rgba(120, 120, 120, 1);
+        }
+    }
+
+    &__image {
+        width: 350px;
+        height: 300px;
+        border-radius: 25px;
+    }
+
+    &__nutrient {
+        margin-top: 32px;
+    }
+}
+
+.nutrient {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 8px;
+    font-size: 18px;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(120, 120, 120, 1);
+    }
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.ingridient {
+    &__title {
+        display: flex;
+        justify-content: space-between;
+
+        & > span:nth-child(1) {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        & > span:nth-child(2) {
+            color: rgba(120, 120, 120, 1);
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        padding: 8px 12px;
+        background-color: rgba(246, 247, 248, 1);
+
+        & > span {
+            font-size: 18px;
+
+            & > span {
+                color: rgba(120, 120, 120, 1);
+            }
+        }
+
+        &__counter {
+            display: flex;
+            gap: 16px;
+
+            & > img {
+                cursor: pointer;
+            }
+
+            & > span {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+}

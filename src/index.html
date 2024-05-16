@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Vegas Task</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card-product">
+            <div class="card-product__left-section">
+                <img class="card-product__image" src="./assets/product.png" alt="product">
+                <div class="card-product__nutrient nutrient">
+                    <span>КБЖУ (на порцию 300г):</span>
+                    <div class="nutrient__item">
+                        <span>Белки</span>
+                        <span>26,70 г</span>
+                    </div>
+                    <div class="nutrient__item">
+                        <span>Жиры</span>
+                        <span>17,38 г</span>
+                    </div>
+                    <div class="nutrient__item">
+                        <span>Углеводы</span>
+                        <span>17,20 г</span>
+                    </div>
+                    <div class="nutrient__item">
+                        <span>Калорийность</span>
+                        <span>324,08 ккал</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-product__right-section">
+                <div class="card-product__title">
+                    <span>Батат фри</span>
+                    <span>140 г</span>
+                </div>
+                <div class="line"></div>
+                <div class="card-product__ingredient ingridient">
+                    <div class="ingridient__title">
+                        <span>Соус на выбор</span>
+                        <span>1/1 за 0₽</span>
+                    </div>
+                    <div class="ingridient__items">
+                        <div data-name="ketchup" data-price="60" class="ingridient__item">
+                            <span>Кетчуп <span id="ketchup_price"> +0 ₽</span></span>
+                            <div class="ingridient__item__counter">
+                                <img id="ketchup_minus" src="./assets/minus.svg" alt="minus">
+                                <span id="ketchup_col">0</span>
+                                <img id="ketchup_plus" src="./assets/plus.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div data-name="cheese" data-price="60" class="ingridient__item">
+                            <span>Сырный <span id="cheese_price"> +0 ₽</span></span>
+                            <div class="ingridient__item__counter">
+                                <img id="cheese_minus" src="./assets/minus.svg" alt="minus">
+                                <span id="cheese_col">0</span>
+                                <img id="cheese_plus" src="./assets/plus.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div data-name="bluchiz" data-price="60" class="ingridient__item">
+                            <span>Блю-чиз <span id="bluchiz_price"> +0 ₽</span></span>
+                            <div class="ingridient__item__counter">
+                                <img id="bluchiz_minus" src="./assets/minus.svg" alt="minus">
+                                <span id="bluchiz_col">0</span>
+                                <img id="bluchiz_plus" src="./assets/plus.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div data-name="barbecue" data-price="60" class="ingridient__item">
+                            <span>Барбекю <span id="barbecue_price"> +0 ₽</span></span>
+                            <div class="ingridient__item__counter">
+                                <img id="barbecue_minus" src="./assets/minus.svg" alt="minus">
+                                <span id="barbecue_col">0</span>
+                                <img id="barbecue_plus" src="./assets/plus.svg" alt="plus">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span id="summation">0 ₽</span>
+                    <button>Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
