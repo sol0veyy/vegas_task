@@ -1,7 +1,7 @@
 const summationNode = document.getElementById('summation');
 const ingridientsNode = document.querySelectorAll('.ingridient__item');
 
-let summation = 0;
+let summation = +summationNode.textContent.split(' ')[0];
 
 ingridientsNode.forEach((ingridient) => {
     let col = 0;
